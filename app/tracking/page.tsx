@@ -108,7 +108,7 @@ function TrackingContent() {
 
               {notFound && (
                 <p className="mt-6 font-sans text-sm" style={{ color: '#e57373' }}>
-                  No order found for "{ref}". Please check the reference and try again.
+                  No order found for &quot;{ref}&quot;. Please check the reference and try again.
                 </p>
               )}
             </div>

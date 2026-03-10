@@ -1,6 +1,6 @@
 'use client'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, Check } from 'lucide-react'
+import { X } from 'lucide-react'
 import { useState } from 'react'
 import { useCart } from '@/context/CartContext'
 import { useAuth } from '@/context/AuthContext'
@@ -309,7 +309,7 @@ export default function PaymentModal({ isOpen, onClose }: Props) {
                   <p className="font-serif text-xl" style={{ color: 'var(--gold)' }}>{orderId}</p>
                 </div>
                 <p className="font-sans text-sm" style={{ color: 'var(--text-muted)' }}>
-                  Your order is being prepared. We'll have it ready soon.
+                  Your order is being prepared. We&apos;ll have it ready soon.
                 </p>
                 {grandTotal >= 200 && (
                   <p className="font-sans text-sm px-4 py-2" style={{ color: 'var(--gold)', border: '1px solid var(--border)', background: 'rgba(201,168,76,0.08)' }}>

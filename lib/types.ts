@@ -66,3 +66,13 @@ export interface Reservation {
   status: 'confirmed' | 'cancelled' | 'completed'
   createdAt: string
 }
+
+export interface Campaign {
+  id: string
+  name: string
+  target: 'all' | 'hive' | 'inactive'
+  channel: 'whatsapp' | 'sms' | 'email'
+  message: string
+  sentCount: number
+  date: string
+}

@@ -2,7 +2,6 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, Minus, Plus, ShoppingBag } from 'lucide-react'
 import { useCart } from '@/context/CartContext'
-import { useState } from 'react'
 import Image from 'next/image'
 
 interface Props {

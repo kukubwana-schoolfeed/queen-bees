@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { Plus } from 'lucide-react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import ScrollReveal from '@/components/ScrollReveal'
 import Ticker from '@/components/Ticker'
 import CartSidebar from '@/components/CartSidebar'

@@ -1,8 +1,8 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { storage } from '@/lib/storage'
-import { Order, Reservation, MenuItem, User } from '@/lib/types'
-import { formatDate, formatDateTime, getStatusLabel } from '@/lib/utils'
+import { Order, Reservation, MenuItem, User, Campaign } from '@/lib/types'
+import { formatDate, getStatusLabel } from '@/lib/utils'
 import { MENU_SEED } from '@/lib/seedData'
 import {
   Package, UtensilsCrossed, CalendarCheck, Users, BarChart3,
@@ -70,7 +70,7 @@ export default function AdminPage() {
     message: '',
   })
   const [campaignSent, setCampaignSent] = useState(false)
-  const [pastCampaigns, setPastCampaigns] = useState<any[]>([])
+  const [pastCampaigns, setPastCampaigns] = useState<Campaign[]>([])
 
   useEffect(() => {
     if (!authed) return
@@ -746,7 +746,7 @@ export default function AdminPage() {
                   <p className="font-sans text-sm" style={{ color: '#888' }}>No campaigns launched yet.</p>
                 ) : (
                   <div className="space-y-3">
-                    {[...pastCampaigns].reverse().map((c: any) => (
+                    {[...pastCampaigns].reverse().map((c: Campaign) => (
                       <div key={c.id} className="flex items-center justify-between p-4" style={{ background: '#161616', border: '1px solid rgba(201,168,76,0.1)' }}>
                         <div>
                           <p className="font-sans text-sm font-semibold" style={{ color: '#F5F0E8' }}>{c.name}</p>

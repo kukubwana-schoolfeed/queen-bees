@@ -34,7 +34,7 @@ export default function ContactPage() {
           <h1 className="font-serif mb-4" style={{ fontSize: 'clamp(3rem, 7vw, 6rem)', color: 'var(--text-primary)', lineHeight: 1 }}>
             Get in <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>Touch</em>
           </h1>
-          <p className="font-sans text-base" style={{ color: 'var(--text-muted)' }}>We'd love to hear from you.</p>
+          <p className="font-sans text-base" style={{ color: 'var(--text-muted)' }}>We&apos;d love to hear from you.</p>
         </ScrollReveal>
       </section>
 
@@ -90,7 +90,7 @@ export default function ContactPage() {
             </h2>
             {sent && (
               <div className="mb-6 px-4 py-3 font-sans text-sm" style={{ background: 'rgba(201,168,76,0.1)', border: '1px solid var(--border)', color: 'var(--gold)' }}>
-                Message sent! We'll be in touch soon.
+                Message sent! We&apos;ll be in touch soon.
               </div>
             )}
             <form onSubmit={handleSubmit} className="space-y-5">

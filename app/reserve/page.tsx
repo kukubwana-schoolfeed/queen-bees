@@ -135,7 +135,7 @@ export default function ReservePage() {
                     Book a <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>Table</em>
                   </h2>
                   <p className="font-sans text-sm mb-10" style={{ color: 'var(--text-muted)' }}>
-                    Reserve your seat at Queen Bees. We'll have everything ready for you.
+                    Reserve your seat at Queen Bees. We&apos;ll have everything ready for you.
                   </p>
                   <form onSubmit={handleSubmit} className="space-y-5">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

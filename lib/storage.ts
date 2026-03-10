@@ -1,4 +1,4 @@
-import { User, Order, Reservation, CartItem, MenuItem } from './types'
+import { User, Order, Reservation, CartItem, MenuItem, Campaign } from './types'
 
 const KEYS = {
   USER:         'qb_user',
@@ -72,8 +72,8 @@ export const storage = {
   setMenu: (items: MenuItem[]) => set(KEYS.MENU, items),
 
   // Campaigns
-  getCampaigns: () => get<any[]>(KEYS.CAMPAIGNS) ?? [],
-  setCampaigns: (c: any[]) => set(KEYS.CAMPAIGNS, c),
+  getCampaigns: () => get<Campaign[]>(KEYS.CAMPAIGNS) ?? [],
+  setCampaigns: (c: Campaign[]) => set(KEYS.CAMPAIGNS, c),
 
   isSeeded: () => {
     const menu = get<MenuItem[]>(KEYS.MENU)
